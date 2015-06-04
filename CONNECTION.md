@@ -1,4 +1,5 @@
-# CONNECTING PHYSICAL ANDROID DEVICE TO PC
+# CONNECTING PHYSICAL ANDROID DEVICE 
+# TO PC
 ### Instruction
 
 This instruction is for Windows 7 x64 system.
@@ -23,7 +24,7 @@ PC:
 
 Device:
 
-8. Look on device display / settings for: 'Allow USB debugging', check 'always allow from this computer'.
+8. Look on device display / settings for: 'Allow USB debugging', check 'always allow from this computer' and then 'ok'.
 
 PC:
 
