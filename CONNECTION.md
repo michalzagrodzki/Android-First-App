@@ -5,6 +5,7 @@ This instruction is for Windows 7 x64 system.
 
 Device:
 1. Enable ADB on Android devices through Settings/About Phone
+
 2. Enable USB debugging on Android Device (elsewhere phone will be not visible for PC)
 PC:
 3. Check in Android SDK Manager for 'Google USB Driver package'
