@@ -1,12 +1,18 @@
 package com.mycompany.myfirstapp;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 
 public class MyActivity extends ActionBarActivity {
+
+    // public string variable 'extra_message'
+    public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +41,19 @@ public class MyActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    // Called when user clicks button 'Send'
+    public void sendMessage(View view){
+        // sets new activity
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        // assigns ????
+        EditText editText = (EditText) findViewById(R.id.edit_message);
+        // assign input to variable
+        String message = editText.getText().toString();
+        // hash method for storing variable
+        intent.putExtra(EXTRA_MESSAGE, message);
+        // start activity
+        startActivity(intent);
     }
 }
