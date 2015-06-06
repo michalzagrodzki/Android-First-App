@@ -13,5 +13,5 @@
             android:title="@string/action_settings"
             myfirstapp:showAsAction="never"
         />
-    
+
 </menu>
