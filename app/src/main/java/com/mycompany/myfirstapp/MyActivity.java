@@ -18,7 +18,10 @@ public class MyActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_display_message);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override
@@ -33,15 +36,23 @@ public class MyActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         switch (item.getItemId()) {
-            case R.id.action_search;
+            case R.id.action_search:
                 openSearch();
                 return true;
-            case R.id.action_settings
+            case R.id.action_settings:
                 openSettings();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void openSettings() {
+
+    }
+
+    private void openSearch() {
+
     }
 
     // Called when user clicks button 'Send'
